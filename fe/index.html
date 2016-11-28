@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main-style.css"/>
+
+    <script type="javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="javascript" src="js/bootstrap.min.js"></script>
+    <script type="javascript" src="js/scripts.js"></script>
+    <title>BugTracking System 0.1</title>
+</head>
+<body>
+
+<nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">BugTracking System 0.1</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Tracking</a></li>
+                <li><a href="#">Archive</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button class="btn btn-default add-button">Add bug <span class="glyphicon glyphicon-plus"></span></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-block">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>ISSUES LIST</h3>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Issue #</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="active">
+                        <td>0005</td>
+                        <td>Problem with URL</td>
+                        <td>04.08.2014</td>
+                        <td>
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+                        </td>
+                    </tr>
+                    <tr class="active">
+                        <td>0004</td>
+                        <td>DI issue</td>
+                        <td>04.08.2014</td>
+                        <td>
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+                        </td>
+                    </tr>
+                    <tr class="warning">
+                        <td>0003</td>
+                        <td>Exception: Apache HTTP Component can't get request</td>
+                        <td>05.08.2014</td>
+                        <td>
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+                        </td>
+                    </tr>
+                    <tr class="warning">
+                        <td>0002</td>
+                        <td>Bug in form</td>
+                        <td>05.08.2014</td>
+                        <td>
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+                        </td>
+                    </tr>
+                    <tr class="danger">
+                        <td>0001</td>
+                        <td>Problems with connection</td>
+                        <td>06.08.2014</td>
+                        <td>
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h4>Priority:</h4>
+                <dl class="dl-horizontal">
+                    <dt style="color:#8c8c8c;">Gray</dt>
+                    <dd>Simple bug that doesn't impact all system</dd>
+                    <dt style="color:#ffc969;">Orange</dt>
+                    <dd>Non-critical bug that impacts at least one function</dd>
+                    <dt style="color:#ff5856;">Red</dt>
+                    <dd>Critical bug that impacts all system</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
